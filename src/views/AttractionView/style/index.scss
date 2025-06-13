@@ -1,0 +1,16 @@
+.attraction-view {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 200vh;
+}
+
+#main-content {
+    padding: 20px;
+    overflow: auto;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.section-group {
+    margin: 10px;
+}
