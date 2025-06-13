@@ -1,0 +1,66 @@
+/* 响应式设计 */
+@media (max-width: 992px) {
+    #sidebar {
+      width: 60px;
+      background-color: #0a192f;
+      /* 添加过渡效果 */
+      transition: width 0.3s ease;
+    }
+  
+    #sidebar:not(.collapsed) {
+      width: 200px;
+    }
+  
+    #sidebar .logo h1,
+    #sidebar.collapsed ul li a span {
+      display: none;
+    }
+  
+    #sidebar:not(.collapsed) .logo h1,
+    #sidebar:not(.collapsed) ul li a span {
+      display: block;
+    }
+  
+    #sidebar .logo .expend_arrow {
+      transform: rotate(90deg);
+    }
+  
+    #sidebar .logo .expend_arrow.expend {
+      transform: rotate(0deg);
+    }
+  
+    #sidebar ul {
+      padding: 10px 4px;
+    }
+  
+    #sidebar.collapsed ul li a {
+      padding: 12px;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #sidebar {
+      display: none;
+    }
+  
+    #sidebar.mobile-hidden {
+      display: none;
+    }
+  
+    #mobile-nav {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #mobile-nav ul li a {
+      font-size: 10px;
+      padding: 6px 2px;
+    }
+  
+    #mobile-nav ul li a svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
