@@ -2,9 +2,9 @@
 import { useToggle } from '@vueuse/core'
 import { isDark } from '@/utils/dark'
 import { RouterView } from 'vue-router'
-import Dark from '@/assets/svg/Dark.vue';
-import Light from '@/assets/svg/Light.vue';
-import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue';
+import Dark from '@/assets/svg/Dark.vue'
+import Light from '@/assets/svg/Light.vue'
+import HeaderComponent from '@/components/HeaderComponent/HeaderComponent.vue'
 
 // 暗黑模式控制
 const toggleDark = useToggle(isDark)
@@ -25,7 +25,6 @@ const toggleDark = useToggle(isDark)
       </div>
     </main>
   </div>
-
 </template>
 
 <style scoped lang="scss">
@@ -53,7 +52,7 @@ const toggleDark = useToggle(isDark)
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .theme {
     right: 2%;
     bottom: 2%;

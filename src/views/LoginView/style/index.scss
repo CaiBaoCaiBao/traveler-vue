@@ -1,84 +1,91 @@
-.login-view{
-    justify-self: center;
+.login-view {
+  justify-self: center;
 }
 
-.form-title{
-    text-align: center;
+.form-title {
+  text-align: center;
+  user-select: none;
+}
+.change-role {
+  justify-self: end;
+  :deep(.el-text) {
+    cursor: pointer;
+    user-select: none;
+  }
 }
 
 .el-form {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .form-item {
-    position: relative;
-    margin-bottom: 32px;
+  position: relative;
+  margin-bottom: 32px;
 }
 
 :deep(.el-input) {
-    height: 40px;
-    font-size: 1.2em;
+  height: 40px;
+  font-size: 1.2em;
 }
 
 :deep(.el-form-item__label-wrap .el-form-item__label) {
-    position: absolute;
-    left: 11px;
-    transform: translateY(0) scale(1);
-    transition: transform 0.3s ease-in-out;
-    padding: 0 4px 0 2px;
-    top:6px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    background-color: var(--el-bg-color);
-    z-index: 1;
+  position: absolute;
+  left: 11px;
+  transform: translateY(0) scale(1);
+  transition: transform 0.3s ease-in-out;
+  padding: 0 4px 0 2px;
+  top: 6px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: var(--el-bg-color);
+  z-index: 1;
 }
 
 :deep(.form-item:has(.el-input__inner:focus) .el-form-item__label-wrap .el-form-item__label),
 :deep(.form-item:has(.el-input__inner:valid) .el-form-item__label-wrap .el-form-item__label) {
-    transform: translateY(-80%) scale(0.8);
+  transform: translateY(-80%) scale(0.8);
 }
 
 .code-inputs {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    .code-btn-disabled{
-        font-size: 10px;
-        justify-self: end;
-    }
+  display: flex;
+  align-items: center;
+  width: 90%;
+  .code-btn-disabled {
+    font-size: 10px;
+    justify-self: end;
+  }
 }
 
 :deep(.code-inputs .el-input__inner) {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
 }
 
 .code-item {
-    width: 40px;
-    margin-right: 10px
+  width: 40px;
+  margin-right: 10px;
 }
 
-
-.operate-btn{
+.operate-btn {
+  width: 100%;
+  .el-button {
     width: 100%;
-    .el-button{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .el-button+.el-button{
-        margin-left: 0;
-    }
+    margin-bottom: 10px;
+  }
+  .el-button + .el-button {
+    margin-left: 0;
+  }
 }
 
-.agreement{
-    display: flex;
-    gap:10px;
-    align-items: center;
-    justify-content: center;
+.agreement {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 
-    .agreement-link{
-        text-decoration: underline;
-        color: rgb(73, 190, 145);
-    }
+  .agreement-link {
+    text-decoration: underline;
+    color: rgb(73, 190, 145);
+  }
 }

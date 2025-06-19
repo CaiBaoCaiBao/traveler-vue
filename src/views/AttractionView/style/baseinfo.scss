@@ -1,34 +1,34 @@
-.tagList{
-    display: flex;
-    gap:10px;
-    margin-bottom: 10px;
+.tagList {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .DescriptionText {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.6;
 }
 .btn-group {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
 }
 .edit-btn {
-    text-align: center;
-    padding: 8px 16px;
-    cursor: pointer;
-    background-color: #334155;
-    border: 2px solid #60a5fa;
-    color: #60a5fa;
-    font-weight: 600;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #334155;
+  border: 2px solid #60a5fa;
+  color: #60a5fa;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .edit-btn:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
